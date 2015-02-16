@@ -1,0 +1,320 @@
+
+
+/*************************
+* GL Modifications 
+* file: shared.css
+*************************/
+
+body
+{
+	background: none;
+	background-color:#F6F6F6;
+	color: #222;
+}
+
+#content-container, #groups
+{
+	background-color:#FFF;
+}
+
+span#logo
+{
+	display:none;
+}
+
+a
+{
+	color: #787575;
+}
+
+a:hover
+{
+	color: #5A82C5;/*007df2;*/
+}
+
+div.box
+{
+	margin: 0px;
+	margin-bottom:-1px;
+	border-color:#dbdbdb;
+	border-style:solid;
+	border-width:1px;
+}
+
+s.box u,
+s.box i,
+s.box b
+{
+	background: none;
+}
+
+s.box i
+{
+	background: none;
+}
+
+
+/*************************
+* GL Modifications 
+* file: reader.css
+*************************/
+
+
+div.box:hover s.box u
+div.box:hover s.box u u,
+div.box:hover s.box b,
+div.box:hover s.box b b,
+div.box:hover s.box i,
+div.box:hover s.box i i,
+div.box.has-focus s.box u,
+div.box.has-focus s.box u u,
+div.box.has-focus s.box b,
+div.box.has-focus s.box b b,
+div.box.has-focus s.box i,
+div.box.has-focus s.box i i
+{ background-position: 0 0; }
+
+div.box:hover s.box i,
+div.box.has-focus s.box i
+{
+	background-image:none !important;
+}
+
+::-webkit-scrollbar
+{
+	width:17px;
+	height:17px;
+	background-color:#F0F0F0;
+	border:none;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #DADADA;
+	border:1px solid #F0F0F0;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	background-color: #CDCDCD;
+}
+
+div.update-available,
+div.no-update-available,
+div.status
+{
+	padding: 0 20px;
+}
+
+div.update-available
+{
+	padding: 0 5px;
+}
+
+div#update-container
+{
+	margin-right:1px;
+	margin-top:1px;
+}
+
+div.update-available, 
+div.update-available s
+{
+	background:none;
+	background-color:#5A82C5;
+}
+div.update-available .content
+{
+	color:#787575;
+	text-shadow:none;
+}
+
+div.update-available, 
+div.no-update-available, 
+#refreshed.status
+{
+	padding-right:0px;
+}
+
+#update .content
+{
+	padding-left:15px;
+}
+
+div.status,
+div.status s
+{
+	background: none;
+}
+
+div.status .btn.refresh
+{
+	left: 0px;
+}
+
+div.status .favicon
+{
+	left: -4px;
+}
+
+div.status .favicon.icon
+{
+	left: 0px;
+}
+
+.box-list li,
+.box-list li a,
+.box-list li form,
+.source-list li,
+.source-list li .source,
+.item .meta h2,
+.item .meta h2 a
+{
+	background: none;
+}
+
+.box-list li,
+.item .meta h2,
+.source-list li
+{
+	padding:0px;
+}
+
+.box-list > li:first-child,
+.box-list > li:first-child a,
+.box-list li:first-child form,
+.item .meta h2,
+.item .meta h2 a
+{
+	background-image: none !important;
+}
+
+.box-list > li:last-child,
+.box-list > li:last-child a,
+.box-list li:last-child form,
+.source-list li:last-child,
+.source-list li:last-child .source
+{
+	background-image: none !important;
+}
+
+.box-list .box-list > li:first-child,
+.box-list .box-list > li:first-child a,
+.box-list .box-list > li:last-child,
+.box-list .box-list > li:last-child a
+{
+	background-image: none !important;
+}
+
+div#groups > .box-list:first-child > li:hover {background-color:#5A82C5; color:#FFF;}
+div#groups > .box-list:first-child > li:hover  > .box-list li:not(:hover) {background-color:#FFF;}
+div#groups > .box-list:first-child > .box-list > li:hover {background-color:#5A82C5;color:#FFF;}
+
+.box-list a:hover { color:#FFF;}
+
+.box-list:hover .box-list li { background-color: transparent;}
+
+.box-list li.has-focus a,
+.box-list li.has-focus form	{ background-position: 0 0; color: #FFF; background-color:#5A82C5;}
+
+.has-focus .box-list li.has-focus,
+.item.has-focus .meta h2,
+.has-focus .source-list li.has-focus			{ background-position: 0 0; color: #FFF; background-color:#5A82C5;}
+
+.has-focus .box-list li.has-focus a,
+.has-focus .box-list li.has-focus form,
+.item.has-focus .meta h2 a,
+.has-focus .source-list li.has-focus .source	{ background-position: 0 0; color: #FFF; }
+
+.has-focus .source-list li.has-focus .source a	{ color: #FFF; }
+
+.box-list li.target	{ background-position: 0 0; } 
+.box-list li.target a,
+.box-list li.target form { background-position: 0 0; color: #FFF; }
+
+
+li.has-focus .icon,
+li.target .icon
+{
+	background-position: 0 0;
+}
+
+.meta h1,
+.meta h1
+{
+	font-size: 17px;
+}
+
+.new .meta .state
+{
+	background-position: 0 -64px;
+}
+
+.new:hover .meta .state
+{
+	background-position: -32px -64px;
+}
+
+.thermometer
+{
+	top: 16px;
+}
+
+.container
+{
+	padding-left: 0px;
+}
+
+#fever
+{
+	left: 2px;
+}
+
+#fluid
+{
+	left: 30px;
+}
+
+#groups-container,
+#feeds-container
+{
+	padding-right: 9px;
+}
+
+.scrollable #groups-scroller,
+.scrollable #feeds-scroller
+{
+	padding-right: 0px;
+	margin-right: 0px;
+}
+
+#groups-container.scrollable:hover #groups-scroller-container, 
+#feeds-container.scrollable:hover #feeds-scroller-container 
+{
+	margin-right: 0px;
+}
+
+.fluid #groups-container,
+.fluid #feeds-container
+{
+	width: 200px;
+}
+
+.fluid #feeds-container
+{
+	left: 250px;
+}
+
+.fluid #content-container,
+.fluid.show-feeds.hot #content-container
+{
+	margin-left: 220px;
+}
+
+li.has-focus .favicon.icon,
+.item.has-focus .favicon.icon,
+.source-list.has-focus .favicon.icon,
+#dragger  .favicon.icon
+{
+	background-position: 0 0;
+}
