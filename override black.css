@@ -5,6 +5,11 @@
 * file: shared.css
 *************************/
 
+::selection 
+{
+	background-color: #d9b814;
+}
+
 body
 {
 	background: none;
@@ -53,13 +58,20 @@ s.box i
 	background: none;
 }
 
-.item-content a {
+.item-content a 
+{
 	color: #7380e4;
 }
 
 
-#groups-scroller-container, #feeds-scroller-container {
+#groups-scroller-container, #feeds-scroller-container 
+{
 	background-color:#3c3c3c;
+}
+
+.item-content b, .item-content big, .item-content strong 
+{
+	color: #FFF;
 }
 
 /*************************
@@ -67,11 +79,13 @@ s.box i
 * file: reader.css
 *************************/
 
-#groups .icon {
+#groups .icon 
+{
 	background-position-y: -24px;
 }
 
-.fluid .item-content img .icon--social{
+.fluid .item-content img .icon--social
+{
 	max-width: 3%;
 }
 
